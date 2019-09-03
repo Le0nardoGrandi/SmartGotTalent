@@ -24,3 +24,13 @@
     color: #ffffff;
     background-color: #95c03f; /* add background-color to active links */
 }
+.premessa{
+	position:absolute;
+	left:2%;
+	height: 50%;
+	width: 50%;
+}
+.pulsante{
+	font-size:100%;
+	text-align:center;
+}
