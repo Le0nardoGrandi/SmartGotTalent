@@ -24,13 +24,59 @@
     color: #ffffff;
     background-color: #95c03f; /* add background-color to active links */
 }
-.premessa{
-	position:absolute;
-	left:2%;
-	height: 50%;
-	width: 50%;
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: white;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
 }
-.pulsante{
-	font-size:100%;
-	text-align:center;
+ a:visited{
+     margin:none;
+     text-decoration: none;
+ }
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  margin: none;
 }
+.navbar-toggler .top-bar {
+    -ms-transform:  translateX(5px) rotate(45deg);
+    -webkit-transform:  translateX(5px) rotate(45deg);
+    transform-origin: 10% 10%;
+    -ms-transform-origin: 10% 10%;
+    -webkit-transform-origin: 10% 10%;
+    transform: translateX(5px) rotate(45deg);
+  }
+   
+  .navbar-toggler .middle-bar {
+    opacity: 0
+  }
+   
+  .navbar-toggler .bottom-bar {
+    transform:  translateX(4px) rotate(-45deg);
+    -ms-transform:  translateX(4px) rotate(-45deg);
+    -webkit-transform:   translateX(4px) rotate(-45deg);
+    transform-origin: 10% 90%;
+    -ms-transform-origin: 10% 10%;
+    -webkit-transform-origin: 10% 10%;
+  }
+   
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+   
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+  }
+   
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
