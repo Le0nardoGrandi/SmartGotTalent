@@ -3,43 +3,29 @@
 <html>
 <head>
 <title>SMART-GOT-TALENT</title>
-<link href="../CSS/css.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <link href="../CSS/css.css" rel="stylesheet" type="text/css">
 <link href="../CSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script>
-		$(function () {
-  $('[data-toggle="tooltip"]').tooltip('show')})
-</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="hero">
 	<nav class="navbar navbar-dark navbar-custom p-0" style="box-shadow: 3px 3px 3px grey; height:12%;" role="navigation">
         <button class="home" href="./index.html"><a href="./index.html"><img src="../RIS/icona_home.png" alt="Home" width="64px" height="64px"></a></button>
         <a class="navbar-brand" style="color:green;font-size:17px;margin:auto" href="https://smartpeg.eu/portal/"><img src="../RIS/smartpeg.png" alt="SmartPeg" style="height:50px;"></a>
-		<!-- Toggler/collapsibe Button -->
-		<button class="navbar-toggler collapsed" id="collapseButton" onclick="check()" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border: none" >
-				<span class="icon-bar top-bar"></span>
-				<span class="icon-bar middle-bar"></span>
-				<span class="icon-bar bottom-bar"></span>
-			  </button>
-			
-			  <!-- Navbar links -->
-			  <div class="collapse navbar-collapse" id="collapsibleNavbar" aria-expanded="true">
-				<ul class="navbar-nav">
-				  <li class="nav-item">
-					<a class="nav-link" href="./grafico.html">Grafico Personale</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="./grafico2.html">Grafico Di Andamento</a>
-				  </li>
-				</ul>
-			  </div>
 	</nav>
 	</div>
-	<iframe  style="position:absolute;left:18%;top:15%" width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiYmUxY2M5MjItOGVlMS00NmQ2LTg2ZmYtNjRkMGRhOTI2OWI0IiwidCI6Ijc5MDRmYmE2LTQyNDgtNDFlOS05MzExLWE2YzI0ZTI0ZGIxMiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-    <a data-toggle="tooltip" data-placement="top" href="./grafico2.html"><img width="6%" height="6%" style="float:right;margin-top:35%;margin-right:2%"  alt="Vai a Grafico Andamento" src="../RIS/freccia.png">
+	
+	<a data-toggle="tooltip" data-placement="top" href="./grafico2.html"><img width="6%" height="6%" style="float:right;margin-top:35%;margin-right:2%"  alt="Vai a Grafico Andamento" src="../RIS/freccia.png">
 	</a>
+	<div width="100%" height="100%">
+		<iframe  style="position:absolute;left:0%;top:12%" width="100%" height="88%" src="https://app.powerbi.com/view?r=eyJrIjoiYmUxY2M5MjItOGVlMS00NmQ2LTg2ZmYtNjRkMGRhOTI2OWI0IiwidCI6Ijc5MDRmYmE2LTQyNDgtNDFlOS05MzExLWE2YzI0ZTI0ZGIxMiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+	</div>
 </body>
 </html>
