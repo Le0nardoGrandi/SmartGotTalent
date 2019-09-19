@@ -15,7 +15,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script>
-	  	  function create_UUID(){
+function prova(){
+    var id = document.getElementById('prova').value;
+    var link = "https://app.powerbi.com/view?r=eyJrIjoiYmUxY2M5MjItOGVlMS00NmQ2LTg2ZmYtNjRkMGRhOTI2OWI0IiwidCI6Ijc5MDRmYmE2LTQyNDgtNDFlOS05MzExLWE2YzI0ZTI0ZGIxMiIsImMiOjh9/?filter=prova/id eq"+id;
+    document.getElementById("frame").src = link;
+}
+function create_UUID(){
     var dt = new Date().getTime();
     var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
         var r = (dt + Math.random()*16)%16 | 0;
@@ -47,28 +52,10 @@
 			  </div>
 	</nav>
 </div>
-<div class="container-fluid">
-  <div class="container-fluid">
-    <br>	
-	<div class="row">
-      <div class="col-sm-6 order-sm-12" style="text-align:center">		<img  style="" width="300px" height="150px"src="../RIS/SGTtrasp.png" alt="SmartPeg"></div>
-      <div class="col-sm-6 order-sm-1" style="text-bottom;"><p style="margin-top:10%">Stiamo svolgendo un’indagine sull'<b>INDIVIDUAZIONE, MAPPATURA e SVILUPPO dei "TALENTI"</b> presenti in ogni persona in ambito scolastico e nelle organizzazioni.
-			Per tale motivo è stato predisposto un questionario che ti invitiamo cortesemente a compilare.</p></div>
-    </div>
-	<br>
-    <!-- Or let Bootstrap automatically handle the layout -->
-    <div class="row">
-      <div class="col-sm-8"><p>Il questionario verrà utilizzato nell'ambito di una ricerca specifica condotta da Smartpeg Srl, azienda specializzata nel fornire piattaforme software per la valorizzazione delle persone, di cui troverai a fine questionario i riferimenti. 
-			I dati verranno trattati in forma aggregata, nel rispetto del Regolamento Europeo 679/2016 (legge sulla privacy) e con il supporto di mezzi cartacei e/o informatici idonei a garantire la loro sicurezza e riservatezza. 
-			I tempi di compilazione del questionario sono all'incirca di 20 minuti.</p>
-		<p>Ti invitiamo a rispondere alle domande spontaneamente, dal momento che non esistono risposte giuste o sbagliate, ma tutte costituiscono autonome manifestazioni del tuo pensiero.</p>
-		<p>Ti ringraziamo per la disponibilità e la collaborazione.</p></div>
-      <div class="col-sm-4"><iframe  style="width: 100%;height: 300px;" src="https://www.youtube.com/embed/M1jn3EcrX3E" frameborder="40" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		<input type="button" style="font-size:100%;background-color:#ffcc00;color:black;border-radius:2%;border:none;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScorEfm0BSm4Q_NW9ee79NSgOdsPa-InOEcdDgrM2uaiuXWIQ/viewform?usp=pp_url&entry.388856396='+create_UUID());" value="Vai al sondaggio" /></div>
-    </div>
-    <br>
-  </div>
-</div>
+<input type="text" id="prova">
+<button onclick="prova()">Prova</button>
+<iframe   id="frame" style="position:absolute;left:0%;top:12%" width="100%" height="88%" src="" frameborder="0" allowFullScreen="true"></iframe>
+
 
 </body>
 </html>
